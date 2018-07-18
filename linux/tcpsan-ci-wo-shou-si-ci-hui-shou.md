@@ -45,7 +45,7 @@
 
 ### TCP连接的建立（三次握手） {#tcp连接的建立三次握手}
 
-![](https://img-blog.csdn.net/20170607205709367?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXpjc3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "这里写图片描述")
+![](/assets/20170607205709367.gif)
 
 > **最开始的时候客户端和服务器都是处于CLOSED状态。主动打开连接的为客户端，被动打开连接的是服务器。**
 
@@ -56,9 +56,7 @@
    这个报文也不能携带数据，但是同样要消耗一个序号。
 4. TCP客户进程收到确认后，还要向服务器给出确认。确认报文的ACK=1，ack=y+1，自己的序列号seq=x+1，此时，TCP连接建立，客户端进入ESTABLISHED（已建立连接）状态。
    TCP规定，ACK报文段可以携带数据，但是如果不携带数据则不消耗序号。
-5. 当服务器收到客户端的确认后也进入ESTABLISHED状态，此后双方就可以开始通信了。
- 
-   ![](https://img-blog.csdn.net/20170605110405666?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXpjc3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "三次握手")
+5. 当服务器收到客户端的确认后也进入ESTABLISHED状态，此后双方就可以开始通信了。![](/assets/停车票.png)
 
 #### 为什么TCP客户端最后还要发送一次确认呢？ {#为什么tcp客户端最后还要发送一次确认呢}
 
