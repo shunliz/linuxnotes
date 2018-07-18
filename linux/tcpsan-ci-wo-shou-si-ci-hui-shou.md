@@ -68,7 +68,7 @@
 
 ### TCP连接的释放（四次挥手） {#tcp连接的释放四次挥手}
 
-![](https://img-blog.csdn.net/20170607205756255?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXpjc3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "这里写图片描述")
+![](/assets/20170607205756255.gif)
 
 > 数据传输完毕后，双方都可释放连接。最开始的时候，客户端和服务器都是处于ESTABLISHED状态，然后客户端主动关闭，服务器被动关闭。
 
@@ -89,7 +89,7 @@
 6. 服务器只要收到了客户端发出的确认，立即进入CLOSED状态。同样，撤销TCB后，就结束了这次的TCP连接。
    可以看到，服务器结束TCP连接的时间要比客户端早一些。
 
-![](https://img-blog.csdn.net/20170606084851272?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXpjc3U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast "四次挥手")
+![](/assets/tcp2t.png)
 
 #### 为什么客户端最后还要等待2MSL？ {#为什么客户端最后还要等待2msl}
 
